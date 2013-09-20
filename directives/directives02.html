@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Directives02</title>
+</head>
+<body>
+	<div ng-app="keyExample">
+	    <div ng-controller="RootController">
+	        <keybinding on="g i" invoke="gotoInbox()" />
+	        <div ng-controller="ChildController">
+	            <keybinding on="g l" invoke="gotoLabel()" />
+	        </div>
+	    </div>
+	    <div>Click in here to gain focus and then try the following key strokes</div>
+	    <ul>
+	        <li>"g i" to show a "Goto Inbox" alert</li>
+	        <li>"g l" to show a "Goto Label" alert</li>
+	    </ul>
+	</div>
+<script src="bower_components/angular/angular.js"></script>
+<script src="controllers/directives02.js"></script>
+</body>
+</html>

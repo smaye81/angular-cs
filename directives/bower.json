@@ -1,0 +1,14 @@
+{
+	"name": "angular directives",
+	"version": "1.0.0",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"angular": "latest"
+	}
+}

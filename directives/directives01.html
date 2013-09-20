@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Directives01</title>
+</head>
+<body ng-controller="DirectivesCtrl">
+	<h4>Directives 01</h4>
+	<button ng-click="clickUnfocused()">
+		I'm not focused.
+	</button>
+	<button app-focus ng-click="clickFocused()">
+		I'm very focused
+	</button>
+	<div>{{message.text}}</div>
+	
+<script src="bower_components/angular/angular.js"></script>
+<script src="controllers/directives01.js"></script>
+</body>
+</html>

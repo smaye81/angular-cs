@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" ng-app='ShoppingModule'>
+<head>
+	<meta charset="UTF-8">
+	<title>Directives03</title>
+</head>
+<body>
+	<div ng-controller="ShoppingController">
+		<h1>Shopping Cart</h1>
+		<table>
+			<tr ng-repeat="item in items">
+				<td>{{item.title}}</td>
+				<td>{{item.description}}</td>
+				<td>{{item.price | currency}}</td>
+			</tr>
+		</table>
+	</div>
+<script src="bower_components/angular/angular.js"></script>
+<script src="controllers/directives03.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

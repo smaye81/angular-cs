@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Filters 02</title>
+</head>
+<body ng-app="Bytes">
+	<div ng-controller="BytesCtrl">
+		<input ng-model="file.size">
+		<div>{{file.size | fileSize}}</div>	
+	</div>
+<script src="bower_components/angular/angular.js"></script>
+<script src="controllers/filters02.js"></script>
+</body>
+</html>
