@@ -18,7 +18,7 @@
       </header>
       <ul id="todo-list">
         <li ng-repeat="todo in todos">
-          <input type="checkbox" ng-model="todo.completed" />
+          <input class="toggle" type="checkbox" ng-model="todo.completed" />
           <label class="completed-{{todo.completed}}">{{todo.title}} <span class="date-added" ng-show="todo.dateAdded">(added: {{todo.dateAdded}})</span></label>
         </li>
       </ul>
