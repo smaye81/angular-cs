@@ -4,13 +4,18 @@ todomvc.controller('TodoCtrl', ['$scope', 'todoStorage',
     var todos = $scope.todos = todoStorage.get();
 
     $scope.addTodo = function(){
-      var newTodo = $scope.newTodo.trim();
+      var newTodo = $scope.newTodo.trim(),
+          addDate = new Date(),
+          dateMM = addDate.getMonth(),
+          dateDD = addDate.getDay(),
+          dateYYYY = addDate.getFullYear();
       if(!newTodo.length){
         return;
       }
       todos.push({
         title: newTodo,
-        completed: false
+        completed: false,
+        dateAdded: dateMM+"-"+dateDD+"-"+dateYYYY
       });
       $scope.newTodo = '';
     };

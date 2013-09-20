@@ -556,3 +556,8 @@ hr {
 .completed-true {
     text-decoration: line-through;
 }
+
+.date-added {
+    font-size: .5em;
+    color: gray;
+}
