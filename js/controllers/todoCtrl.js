@@ -15,7 +15,7 @@ todomvc.controller('TodoCtrl', ['$scope', 'todoStorage',
       todos.push({
         title: newTodo,
         completed: false,
-        dateAdded: dateMM+"-"+dateDD+"-"+dateYYYY
+        dateAdded: "Zut Alors! " + dateMM+"-"+dateDD+"-"+dateYYYY
       });
       $scope.newTodo = '';
     };
